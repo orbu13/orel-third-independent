@@ -1,0 +1,22 @@
+html {
+  text-align: center;
+}
+
+body {
+  text-align: center;
+  padding: 50px 50px 50px 50px;
+  border: 2px solid red;
+  border-radius: 12px;
+  margin: 100px 100px 100px 100px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+button {
+  border-radius: 12%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-color: red;
+  padding: 2px;
+  margin: 15px;
+}
