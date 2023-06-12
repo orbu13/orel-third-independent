@@ -1,20 +1,16 @@
 let form = document.getElementById("numberForm")
 
+
 form.addEventListener("submit", e => {
-  e.preventDefault() //prevent refresh
+  e.preventDefault()//prevent refresh
 
   let inputValue = document.getElementById("numberInput").value
 
-  let outputDive.innerHTML = beepBoop(inputValue)
-
-})
-
-function beepBoop(inputValue) {
+  let outputDiv = document.getElementById("output")
   let result = []
 
   for (let i = 0; i <= inputValue; i++) {
     let num = i + ""
-
     if (num.includes("3")) {
       result.push("Won't you be my neighbor?!")
     }
@@ -29,5 +25,6 @@ function beepBoop(inputValue) {
     }
   }
 
-  return result.join(", ")
-}
+
+  outputDiv.innerHTML = result.join(", ")
+})
